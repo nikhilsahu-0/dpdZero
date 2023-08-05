@@ -4,10 +4,10 @@ This guide will help you setup and use our API to manage user data, generate tok
 SQLAlchemy as the ORM (Object-Relational Mapping), PostgreSQL as the database, and JWT for token generation.
 
 ## Table of Contents
-1. Frameworks
-1. Database Schema
-1. Instructions to Run
-1. Setup Instructions
+1. [Frameworks](#frameworks)
+1. [Database Schema](#database-schema)
+1. [Instructions to Run](#instructions-to-run)
+1. [Setup Instructions](#setup-instructions)
 
 
 ## Frameworks
