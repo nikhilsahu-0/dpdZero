@@ -1,0 +1,31 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+    container_name: postgres_container
+
+  pg-admin:
+    image: dpage/pgadmin4:7.2
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@email.com
+      - PGADMIN_DEFAULT_PASSWORD=password
+      - PGADMIN_LISTEN_PORT=5050
+    ports:
+      - "5050:5050"
+    container_name: pgadmin_container
+
+  fastapi:
+    build: ./api
+    container_name: fastapi_container
+    ports:
+      - "8000:8000"
+volumes:
+  data:
+networks:
+  my_network:
