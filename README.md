@@ -71,6 +71,10 @@ The -d flag runs the containers in the background.
 
 The application should now be up and running, with the required services connected over the my_network Docker network. You can access api endpoints by visiting the appropriate URL `http://localhost:8000`
 
+**PG-Admin :** `http://localhost:5050` **Email/Username :** *admin@email.com* **Password :** *password*
+
+**Postgres Credentials( if required ) :** **User :** *user* **Password :** *password*
+
 ## Setup Instructions
 
 No further setup is required as Docker handles the environment and dependencies. The provided Docker Compose configuration takes care of setting up all the necessary components.
